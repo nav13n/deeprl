@@ -2,7 +2,7 @@
 
 [image1]: ./images/banana.gif "Trained Agent"
 
-# Project 1: Navigation
+# Project: Navigation
 
 ### Introduction
 
