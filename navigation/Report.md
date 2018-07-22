@@ -30,11 +30,11 @@ Deep Q Network Learning Algorithm has been used to train the agent. Deep Q Netwo
 The `dqn()` function contains the implementation of the following DQN Learning Algorithm:
 1. Fill the Replay Buffer
 2. For each episode
-    a) Find an action using Epsilon Greedy Policy
-    b) Evaluate the next state and reward by performing the action on the environment
-    c) Add the Action-State pair in replay buffer
-    d) Update the prediction QNetwork, and for every fourth run update the traget QNetwork.
-    Repeat steps till the game is over (done = true)
+    - Find an action using Epsilon Greedy Policy
+    - Evaluate the next state and reward by performing the action on the environment
+    - Add the Action-State pair in replay buffer
+    - Update the prediction QNetwork, and for every fourth run update the traget QNetwork.
+    - Repeat steps till the game is over (done = true)
 
 #### Deep Q Network
 The Deep Q Network approximates the value function. It has been implemented as `QNetwork` class.  The implementation contains a simple three layered feed forward network. The input layer has 37 units, the two hidden layers have 64 units each and the output layer has 4 units, one for each action.
@@ -51,7 +51,7 @@ Update every: 4. Episodes elapsed between updates to the target QNetwork.
 #### Reward Plot
 
 Training with the above QNetwork implementation and chosen hyperparameters solved the environment in 656 episodes with an average score of 15.03
-[Reward Plot][image1]
+![Reward Plot][image1]
 
 ### Future Ideas
 As a next evolutionary step to the implementation of the simple DQN, It would be great to try out Duelling DQN and Double DQN to see its impact on performance and stability. It would also be interesting to use prioritized experience replay, so as to replay important transitions more frequently, and therefore learn more efficiently as mentioned [here](https://arxiv.org/abs/1511.05952)
